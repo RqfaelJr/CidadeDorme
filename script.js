@@ -96,7 +96,7 @@ function sortear() {
             escolhaFuncao = parseInt(Math.random() * fixos.length);
             console.log(fixos[escolhaFuncao]);
             resultado.innerHTML = `${fixos[escolhaFuncao]} // ${numeros[escolhaNumeros]}`;
-            alteraImagem(`assets/${fixos[escolhaFuncao]}.jpeg`)
+            alteraImagem(`assets/${fixos[escolhaFuncao]}.jpeg`);
             fixos.splice(escolhaFuncao, 1);
             total--
             break
@@ -104,7 +104,7 @@ function sortear() {
             escolhaFuncao = parseInt(Math.random() * mafiaResto.length);
             console.log(mafiaResto[escolhaFuncao]);
             resultado.innerHTML = `${mafiaResto[escolhaFuncao]} // ${numeros[escolhaNumeros]}`;
-            alteraImagem(`assets/${mafiaResto[escolhaFuncao]}.jpeg`)
+            alteraImagem(`assets/${mafiaResto[escolhaFuncao]}.jpeg`);
             mafiaResto.splice(escolhaFuncao, 1);
             total--
             break
@@ -112,7 +112,7 @@ function sortear() {
             escolhaFuncao = parseInt(Math.random() * cidadeResto.length);
             console.log(cidadeResto[escolhaFuncao]);
             resultado.innerHTML = `${cidadeResto[escolhaFuncao]} // ${numeros[escolhaNumeros]}`;
-            alteraImagem(`assets/${cidadeResto[escolhaFuncao]}.jpeg`)
+            alteraImagem(`assets/${cidadeResto[escolhaFuncao]}.jpeg`);
             cidadeResto.splice(escolhaFuncao, 1);
             total--
             break
@@ -122,12 +122,12 @@ function sortear() {
                     escolhaFuncao = parseInt(Math.random() * neutros.length);
                     console.log(neutros[escolhaFuncao]);
                     resultado.innerHTML = `${neutros[escolhaFuncao]} // ${numeros[escolhaNumeros]}`;
-                    alteraImagem(`assets/${neutros[escolhaFuncao]}.jpeg`)
+                    alteraImagem(`assets/${neutros[escolhaFuncao]}.jpeg`);
                     neutros.splice(escolhaFuncao, 1);
                 } else {
                     console.log(funcNeutro);
                     resultado.innerHTML = `${funcNeutro} // ${numeros[escolhaNumeros]}`;
-                    alteraImagem(`assets/${funcNeutro}.jpeg`)
+                    alteraImagem(`assets/${funcNeutro}.jpeg`);
                     neutros.length = 0;
                 }
             } else {
@@ -148,7 +148,7 @@ function sortear() {
                         if (funcNeutro == funcNeutro2) {
                             neutros.length = 0;
                         }
-                        funcNeutro = funcNeutro2
+                        funcNeutro = funcNeutro2;
                     }
                 }
             }
@@ -157,12 +157,12 @@ function sortear() {
             break
             
     }
-    terminaJogo()
-    numeros.splice(escolhaNumeros, 1)
+    terminaJogo();
+    numeros.splice(escolhaNumeros, 1);
 }
 
 function alteraImagem(caminhoNovaImagem) {
-    imagem.src = caminhoNovaImagem
+    imagem.src = caminhoNovaImagem;
 }
 
 function terminaJogo() {
